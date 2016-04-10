@@ -2,6 +2,9 @@
 //
 
 #include "stdafx.h"
+
+#include "application.h"
+#ifdef  TEST_CONSOLE
 #include <GLFW\glfw3.h>
 
 int main()
@@ -32,6 +35,10 @@ int main()
 
     return 0;
 }
+#endif
+class simpleclear : public sb6::application
+{
 
+};
 
-
+DECLARE_MAIN(simpleclear);
